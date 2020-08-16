@@ -13,7 +13,7 @@ export const Login = () => {
                 <label>Password</label>
                 <input type="password" className='form-control' />
                 <br />
-                <Link to="/Main" className='btn btn-success btn-md'>Login</Link>
+                <Link to="/Main" className='btn btn-success btn-md login-btn'>Login</Link>
             </form>
         </div>
     )

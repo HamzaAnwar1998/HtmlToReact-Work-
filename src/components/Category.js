@@ -3,7 +3,7 @@ import Sidebar from './Sidebar'
 
 const Category = () => {
     return (
-        <div>
+        <>
             <div className='main'>
                 <div className='sidebar'>
                     <Sidebar />
@@ -21,54 +21,46 @@ const Category = () => {
                         </form>
                     </div>
 
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>
-                                    <form autoComplete="off" className='form-group row float-right myform'>
-                                        <div className='col-xs-2 input-group search-box'>
-                                            <input type="text" className='form-control' />
-                                            <div className='input-group-append'>
-                                                <button><i className='fas fa-search'></i></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </th>
-                            </tr>
-                        </thead>
-                        <thead>
-                            <tr>
-                                <th>Category Name</th>
-                                <th>Status</th>
-                                <th>Active/InActive</th>
-                                <th>Edit</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Graphic</td>
-                                <td>Active</td>
-                                <td><button className='btn btn-info btn-md'>Active</button>
-                                    <button className='btn btn-info btn-md btn-inline'>InActive</button>
-                                </td>
-                                <td><button className='btn btn-info btn-md btn-inline'>Edit</button></td>
-                            </tr>
-                            <tr>
-                                <td>Testing</td>
-                                <td>Active</td>
-                                <td><button className='btn btn-info btn-md btn-inline'>Active</button>
-                                    <button className='btn btn-info btn-md btn-inline'>InActive</button>
-                                </td>
-                                <td><button className='btn btn-info btn-md btn-inline'>Edit</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <form autoComplete="off" className=' form-group input-form'>
+                        <input type="text" placeholder="search" className='form-control' />
+                        <div className='input-group-append'>
+                            <button><i className='fas fa-search'></i></button>
+                        </div>
+                    </form>
+
+                    <div className='table-responsive'>
+                        <table className="table">
+                            <thead>
+                                <tr>
+                                    <th>Category Name</th>
+                                    <th>Status</th>
+                                    <th>Active/InActive</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Graphic</td>
+                                    <td>Active</td>
+                                    <td><button className='btn btn-info btn-md'>Active</button>
+                                        <button className='btn btn-info btn-md btn-inline'>InActive</button>
+                                    </td>
+                                    <td><button className='btn btn-info btn-md btn-inline'>Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Testing</td>
+                                    <td>Active</td>
+                                    <td><button className='btn btn-info btn-md btn-inline'>Active</button>
+                                        <button className='btn btn-info btn-md btn-inline'>InActive</button>
+                                    </td>
+                                    <td><button className='btn btn-info btn-md btn-inline'>Edit</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

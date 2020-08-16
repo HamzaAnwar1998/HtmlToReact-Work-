@@ -3,7 +3,7 @@ import Sidebar from './Sidebar'
 
 const Sellers = () => {
     return (
-        <div>
+        <>
             <div className='main'>
                 <div className='sidebar'>
                     <Sidebar />
@@ -11,24 +11,13 @@ const Sellers = () => {
                 <div className='rightside'>
                     <h2>Sellers</h2>
                     <br />
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>
-                                    <form autoComplete="off" className='form-group row float-right myform'>
-                                        <div className='col-xs-2 input-group search-box'>
-                                            <input type="text" className='form-control' />
-                                            <div className='input-group-append'>
-                                                <button><i className='fas fa-search'></i></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </th>
-                            </tr>
-                        </thead>
+                    <form autoComplete="off" className=' form-group input-form'>
+                        <input type="text" placeholder="search" className='form-control' />
+                        <div className='input-group-append'>
+                            <button><i className='fas fa-search'></i></button>
+                        </div>
+                    </form>
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th>User</th>
@@ -58,7 +47,7 @@ const Sellers = () => {
                     </table>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
