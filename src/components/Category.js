@@ -12,6 +12,7 @@ const Category = () => {
                     <h2>Category</h2>
                     <br /><br />
 
+                    {/* search form */}
                     <div className='container-fluid'>
                         <h4>Category Name </h4>
                         <br />
@@ -21,13 +22,15 @@ const Category = () => {
                         </form>
                     </div>
 
+                    {/* form inside of table */}
                     <form autoComplete="off" className=' form-group input-form'>
                         <input type="text" placeholder="search" className='form-control' />
-                        <div className='input-group-append'>
+                        <div>
                             <button><i className='fas fa-search'></i></button>
                         </div>
                     </form>
 
+                    {/* table */}
                     <div className='table-responsive'>
                         <table className="table">
                             <thead>

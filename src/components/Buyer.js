@@ -11,31 +11,15 @@ const Buyer = () => {
                 <div className='rightside'>
                     <h2>Buyers</h2>
                     <br />
+                    {/* form inside of table */}
                     <form autoComplete="off" className=' form-group input-form'>
                         <input type="text" placeholder="search" className='form-control' />
-                        <div className='input-group-append'>
+                        <div>
                             <button><i className='fas fa-search'></i></button>
                         </div>
                     </form>
                     <div className='table-responsive'>
                         <table className="table">
-                            {/* <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>
-                                    <form autoComplete="off" className='form-group row float-right myform'>
-                                        <div className='col-xs-2 input-group search-box'>
-                                            <input type="text" className='form-control input-field' />
-                                            <div className='input-group-append d-block'>
-                                                <button><i className='fas fa-search'></i></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </th>
-                            </tr>
-                        </thead> */}
                             <thead>
                                 <tr>
                                     <th>User</th>

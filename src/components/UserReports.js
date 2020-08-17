@@ -3,7 +3,7 @@ import Sidebar from './Sidebar'
 
 const UserReports = () => {
     return (
-        <div>
+        <>
             <div className='main'>
                 <div className='sidebar'>
                     <Sidebar />
@@ -11,12 +11,16 @@ const UserReports = () => {
                 <div className='rightside'>
                     <h2>User Reports</h2>
                     <br />
+
+                    {/* form inside of table */}
                     <form autoComplete="off" className=' form-group input-form'>
                         <input type="text" placeholder="search" className='form-control' />
-                        <div className='input-group-append'>
+                        <div>
                             <button><i className='fas fa-search'></i></button>
                         </div>
                     </form>
+
+                    {/* table */}
                     <div className='table-responsive'>
                         <table className="table">
                             <thead>
@@ -58,7 +62,7 @@ const UserReports = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
